@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.App{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/background/Ventura.jpg');
+    background-size: auto 211%; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.navB{
+    position: static;
+    padding: 5px 15px 4px 16px;
+    height: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color:  rgba(86, 83, 83, 0.3) ;
+    color: white;
+    backdrop-filter: blur(100px);
+
+}
+
+.navB :nth-child(1){
+    font-size: 0.9rem;    
+    font-weight: bold ;
+}
+.navB :nth-child(1) span{
+    margin-left: 20px;
+}
+
+.navB :nth-child(2){
+    font-size: 0.9rem;    
+    font-weight: bold ;
+}
+.navB :nth-child(2) span{
+    margin-left: 20px;
+}
+.containerContent{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerFooter{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    margin-top: 55px;
+}
+
+.footer{   
+    width: 95vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(59, 56, 56, 0.343);
+    color: white;
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
+    padding-left: 10px;    
+}
+
+.footer :nth-child(1){
+  background-image: url('../img/icons/finder.png');
+  background-position: center; 
+  width: 80px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  transition: .2s;
+}
+.footer :nth-child(2){
+  background-image: url('../img/icons/safari.png');
+  background-position: center; 
+  width: 80px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  transition: .2s;
+}
+.footer :nth-child(3){
+  background-image: url('../img/icons/mensaje.png');
+  background-position: center; 
+  width: 80px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  transition: .2s;
+}
+.footer :nth-child(4){
+  background-image: url('../img/icons/mail.png');
+  background-position: center; 
+  width: 80px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  transition: .2s;
+}
+.footer :nth-child(5){
+  background-image: url('../img/icons/maps.png');
+  background-position: center; 
+  width: 80px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  transition: .2s;
+}
+.footer :nth-child(6){
+  background-image: url('../img/icons/fotos.png');
+  background-position: center; 
+  width: 80px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  transition: .2s;
+}
+.footer :nth-child(7){
+  background-image: url('../img/icons/facetime.png');
+  background-position: center; 
+  width: 80px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  transition: .2s;
+}
+.footer :nth-child(8){
+  background-image: url('../img/icons/calendario.png');
+  background-position: center; 
+  width: 80px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  transition: .2s;
+}
+.footer :nth-child(9){
+  background-image: url('../img/icons/contact.png');
+  background-position: center; 
+  width: 80px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  transition: .2s;
+}
+.footer :nth-child(10){
+  background-image: url('../img/icons/notas.png');
+  background-position: center; 
+  width: 80px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  transition: .2s;
+}
+.footer :nth-child(11){
+  background-image: url('../img/icons/music.png');
+  background-position: center; 
+  width: 80px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  transition: .2s;
+}
+.footer :nth-child(12){
+  background-image: url('../img/icons/keynote.png');
+  background-position: center; 
+  width: 80px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  transition: .2s;
+}
+.footer :nth-child(13){
+  background-image: url('../img/icons/app.png');
+  background-position: center; 
+  width: 80px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  transition: .2s;
+}
+.footer :nth-child(14){
+  background-image: url('../img/icons/sistem.png');
+  background-position: center; 
+  width: 80px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  transition: .2s;
+}
+.footer :nth-child(1):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+.footer :nth-child(2):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+.footer :nth-child(3):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+.footer :nth-child(4):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+.footer :nth-child(5):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+.footer :nth-child(6):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+.footer :nth-child(7):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+.footer :nth-child(8):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+.footer :nth-child(9):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+.footer :nth-child(10):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+.footer :nth-child(11):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+.footer :nth-child(12):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+.footer :nth-child(13):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+.footer :nth-child(14):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+.footer :nth-child(15):hover{
+    transform: translatey(-25px) scale(1.05);
+}
+
+
+.marco{
+    width: 835px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.leftNavBar{
+    height: 100%;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.374);
+    backdrop-filter: blur(100px);
+    border-radius:9px 0px 0px 9px;    
+   
+}
+.content1{
+    height: 100%;
+    width: 60vw;
+    background-color: rgb(55, 44, 40);
+    border-radius:0px 9px 9px 0px;
+    border-left: 1px solid ;
+    border-color:black;
+    
+}
