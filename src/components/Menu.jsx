@@ -36,6 +36,7 @@ const Menu = () => {
               <img  className='foto' src={user} alt="" />
             </div>
             <div className='nameUser'>
+              {/*prop aqui*/}
               <p>Jesus Emmanuel C.</p>
               <span>Apple ID</span>
             </div>

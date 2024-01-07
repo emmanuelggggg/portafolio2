@@ -406,3 +406,119 @@
   margin-top: 4px;
   font-weight: normal;
 }
+
+.name{
+  color: white;
+  margin: 15px 0px 0px 25px;
+  font-weight: bold;
+}
+
+.fl{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.perfilContent{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+
+.fotoPerfilContent{
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 80%; 
+  border-radius: 100%;
+}
+
+.perfilContent p{
+  color: white;
+  margin: 15px 0px 3px 0px;
+  font-weight: bold;
+}
+.perfilContent span{
+  color: rgb(255, 255, 255);
+  margin-top: 4px;
+  font-weight: normal;
+}
+.accordionPrincipal{
+  border: 1px solid;
+  border-color: rgb(72, 73, 72);
+  margin: 15px 8px 0px 8px;
+  padding: 9px;
+  border-radius: 5px;
+}
+.accordion {
+  width: 100%;
+  
+}
+
+.iconUser{
+  padding: 3px;
+  width: 24px;
+  height: 24px;
+}
+
+.accordion-item {
+  border-bottom: 0.3px solid #686868;
+  margin-bottom: 2px;
+  color:white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.accordion-header {
+  background-color:rgb(55, 44, 40);
+  padding: 3px;
+  cursor: pointer;
+  
+}
+.contentImg {
+  background: linear-gradient(to bottom , #d2dadd 0%, #7b7377 100%);
+  width:30px;
+  height: 30px;
+  margin-right: 8px;
+  border-radius: 5px;
+}
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+.space{
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+}
+.spaceS{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+.iconFlecha{
+  width: 30px;
+  height: 30px;
+}
+.icon-social{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+}
+.icon-social div{
+  margin: 20px 5px 3px 5px;
+}
+
+.icons-skills{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
