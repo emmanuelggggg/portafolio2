@@ -1,4 +1,4 @@
-import React , {useState} from 'react'
+import React , {useState } from 'react'
 import user from '../assets/img/imgUser/io.jpg'
 import iconUser from '../assets/img/icons/user.png'
 import iconFlecha from '../assets/img/icons/flecha.png'
@@ -14,6 +14,7 @@ import iconMysql from '../assets/img/icons/mysql.png'
 import iconTailwind from '../assets/img/icons/tailwind.png'
 import iconFigma from '../assets/img/icons/figma.png'
 import iconSass from '../assets/img/icons/sass.png'
+import iconGorro from '../assets/img/icons/gorro.png'
 
 const about = "I am currently a software development engineering student. 1 year of experience in frontend. My adventure begins two and a half years ago in college, I have done distance work, social service and professional practices in autonomous places of government La Paz B.C.S.(Mexico). I am a calm and confident person, curious by nature, I work to improve the life of my wife and son." ;
 
@@ -43,7 +44,8 @@ const AccordionItem = ({ title, content, imageOpen , imageClosed, iconOpen, icon
   );
 };
 
-const Home = () => {
+
+const Home = () => { 
   return (
     <div className='content1'>
       {/*nombre*/}
@@ -138,6 +140,15 @@ const Home = () => {
               iconClosed={iconFlecha}
             />
             
+            <AccordionItem              
+              title="Education"
+              content={ <p>Autonomous University of Baja California Sur (UABCS) </p>}
+              imageOpen={iconGorro}
+              imageClosed={iconGorro}
+              iconOpen={iconFlechaDown}
+              iconClosed={iconFlecha}
+            />
+
           </div>
         </div>
 

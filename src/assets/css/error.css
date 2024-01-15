@@ -1,0 +1,46 @@
+.animation_background_test{
+    
+    
+    -webkit-animation-name: animation;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;    
+    -webkit-animation-play-state: running;
+    
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;    
+    animation-play-state: running;
+    color: #f00;
+}
+
+@-webkit-keyframes animation {
+    0%     {color:red;}
+    30.0%   {color:rgb(196, 181, 19);}
+    50.0%  {color:#26f713;}
+    60.0%  {color:#13dcf7;}
+    70.0%  {color:#133df7;}
+    80.0%   {color: #d513f7;}
+    100.0%  {color:rgb(200, 0, 255);}
+}
+
+@keyframes animation {
+    0%     {color:red;}
+    30.0%   {color:rgb(196, 181, 19);}
+    50.0%  {color:#26f713;}
+    60.0%  {color:#13dcf7;}
+    70.0%  {color:#133df7;}
+    80.0%   {color: #d513f7;}
+    100.0%  {color:rgb(255, 0, 0);}
+}
+h1{
+    font-family: fantasy    ;
+    font-size:46px;
+}
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

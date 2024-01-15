@@ -1,19 +1,19 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 .App{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url('../img/background/Ventura.jpg');
     background-size: auto 211%; 
-    background-position: center; 
+    background-position: center;  
     background-repeat: no-repeat;
 }
 
 .navB{
-    position: static;
-    padding: 5px 15px 4px 16px;
+    margin:0px 9px 80px;
+    width: 100%;
+    padding: 2px 2px 4px 5px;
     height: 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -40,23 +40,24 @@
 }
 .containerContent{
     width: 100%;
-    height: 75vh;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.containerFooter{
-    width: 100%;
-    height: 15vh;
+/* .containerFooter{
+    width: 100px;
+    height: 10vh;
     display: flex;
-    justify-content: center;
-    align-items:flex-end;
-    margin-top: 55px;
-}
+    justify-content:end;
+    align-items: bottom;
+}   */
 
 .footer{   
-    width: 95vw;
+    margin: 40px 10px 1px 10px;
+    width: 100%;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -242,13 +243,14 @@
 
 
 .marco{
-    width: 835px;
+    width: 830px;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin-bottom: 20px;
 }
+
 
 .leftNavBar{
     height: 100%;
@@ -259,13 +261,17 @@
    
 }
 .content1{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
     height: 100%;
     width: 50vw;
     background-color: rgb(55, 44, 40);
     border-radius:0px 9px 9px 0px;
     border-left: 1px solid ;
     border-color:black;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .buttonIcons{
@@ -401,9 +407,11 @@
   font-weight: bold;
   font-size: 12px;
 }
+.nameUser p{
+  margin: 0px;
+}
 .nameUser span{
   color: rgba(255, 255, 255, 0.687);
-  margin-top: 4px;
   font-weight: normal;
 }
 
@@ -521,4 +529,13 @@
   display: flex;
   flex-direction: row;
   justify-content:space-evenly;
+}
+
+.carrusel{
+  max-height: 40vh;
+  min-height: 49vh;
+}
+
+.link-perfil{
+  text-decoration: none;
 }

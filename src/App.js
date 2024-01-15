@@ -7,28 +7,38 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
+import Designs from "./pages/Designs";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
       <div className="containerContent">
 
-        <Routes>
-          <Route path="/" element={<Menu />}>
-            <Route path="/" element={<Home />}/>
-            <Route path="About" element={<About />} />
-            <Route path="Projects" element={<Projects />} />
-            <Route path="*" element={<Error />} />
-          </Route>
-        </Routes> 
+        
+        <NavBar />
+        
+
+        <div>
+          <Routes>
+            <Route path="/" element={<Menu />}>
+              <Route path="/" element={<Home />}/>
+              <Route path="About" element={<About />} />
+              <Route path="Projects" element={<Projects />} />
+              <Route path="Designs" element={<Designs />} />
+              <Route path="*" element={<Error />} />
+            </Route>
+          </Routes> 
+        </div> 
+
+        <div>
+           <div className="containerFooter">
+            <div>
+              <Footer />
+            </div>
+          </div>  
+        </div>
+
       </div>
-
-
-
-      <div className="containerFooter">
-        <Footer />
-      </div> 
     </div>
   );
 }
