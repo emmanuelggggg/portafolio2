@@ -33,6 +33,11 @@ import gaba3 from '../assets/img/projects/gaba/gaba3.png'
 import gaba4 from '../assets/img/projects/gaba/gaba4.png'
 import gaba5 from '../assets/img/projects/gaba/gaba5.png'
 
+import porta1 from '../assets/img/projects/portafolio/porta1.png'
+import porta2 from '../assets/img/projects/portafolio/porta2.png'
+import porta3 from '../assets/img/projects/portafolio/porta3.png'
+import porta4 from '../assets/img/projects/portafolio/porta4.png'
+
 const Projects = () => {
     const sesea = [
         sesea1,sesea2,sesea3,
@@ -44,7 +49,7 @@ const Projects = () => {
     const sea =[
         sea1,sea2,sea3,sea4,sea5,sea6
     ]
-
+    const portafolio =[porta1,porta2,porta3,porta4]
     const gaba =[gaba1,gaba2,gaba3,gaba4,gaba5]
     return (       
         <div className='content1'>
@@ -69,13 +74,19 @@ const Projects = () => {
                 <Slideshow 
                     img={edites} 
                     titulo='EDITEST'
-                    link={'https://www.seabcs.gob.mx/'}/>
+                    link={'#'}/>
             </div>
             <div className='carrusel'>
                 <Slideshow 
                     img={gaba} 
                     titulo='Portafolio Gabael'
                     link={'https://gabaeltylorportafolio.000webhostapp.com/'}/>
+            </div>
+            <div className='carrusel'>
+                <Slideshow 
+                    img={portafolio} 
+                    titulo='Portafolio Emmanuel'
+                    link={'https://portafolio-emmanuel-carballo.netlify.app/'}/>
             </div>
         </div> 
     )

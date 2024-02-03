@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Designs from "./pages/Designs";
+import Photographs from "./pages/Photos";
 
 function App() {
   return (
@@ -25,13 +26,15 @@ function App() {
               <Route path="About" element={<About />} />
               <Route path="Projects" element={<Projects />} />
               <Route path="Designs" element={<Designs />} />
+              <Route path="Photographs" element={<Photographs />} />
               <Route path="*" element={<Error />} />
             </Route>
           </Routes> 
         </div> 
 
-        <div>
-           <div className="containerFooter">
+        
+        <div className="fo">
+          <div className="containerFooter">
             <div>
               <Footer />
             </div>

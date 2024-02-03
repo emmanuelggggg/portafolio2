@@ -4,13 +4,32 @@ import user from '../assets/img/imgUser/io.jpg'
 import '../assets/css/menu.css';
 
 const Menu = () => {
+  const handleFullscreen = () => {
+    const element = document.documentElement; // Elemento a poner en pantalla completa
+
+    if (document.fullscreenElement) {
+      // Si ya está en pantalla completa, salir de pantalla completa
+      document.exitFullscreen();
+    } else {
+      // Si no está en pantalla completa, activar pantalla completa
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if (element.mozRequestFullScreen) { // Firefox
+        element.mozRequestFullScreen();
+      } else if (element.webkitRequestFullscreen) { // Chrome, Safari, y Opera
+        element.webkitRequestFullscreen();
+      } else if (element.msRequestFullscreen) { // Internet Explorer/Edge
+        element.msRequestFullscreen();
+      }
+    }
+  };
   return (
     <div className='marco'>
         <div className='leftNavBar'>
           <div className='buttonIcons'>
               <div className='rojo'>x</div>
               <div className='amarillo'>-</div>
-              <div className='verde'> 
+              <div className='verde' onClick={handleFullscreen}> 
                 <div className='v1'>
                   <svg xmlns="http://www.w3.org/2000/svg" width="6" height="9" fill="currentColor" class="bi bi-triangle-fill" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767z"/>
@@ -90,6 +109,17 @@ const Menu = () => {
                     </div>  
                   <Link className='menu-item' to='/Designs'>
                     Designs
+                  </Link>
+                </div>
+                <div className='menu-control' >
+                    <div className='menu-icon5'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="white" class="bi bi-camera2" viewBox="0 0 16 16">
+                        <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4"/>
+                        <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.97 5.97 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1M2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0M14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0"/>
+                      </svg>
+                    </div>  
+                  <Link className='menu-item' to='/Photographs'>
+                    Photographs
                   </Link>
                 </div>
               </div>
